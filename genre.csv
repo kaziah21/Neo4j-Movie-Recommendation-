@@ -1,0 +1,2 @@
+UNWIND ["Action", "Comedy", "Drama", "Sci-Fi", "Romance", "Thriller", "Horror", "Animation", "Fantasy", "Documentary"] AS genre
+CREATE (:Genre {name: genre}); 

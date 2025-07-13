@@ -1,0 +1,23 @@
+MATCH (m:Movie), (g:Genre)
+
+WHERE
+
+  (m.title IN ["The Matrix", "Inception", "The Dark Knight", "Avengers: Endgame", "Black Panther"] AND g.name = "Action") OR
+
+  (m.title IN ["The Matrix", "Inception", "Interstellar"] AND g.name = "Sci-Fi") OR
+
+  (m.title IN ["Titanic", "The Notebook", "La La Land", "Her"] AND g.name = "Romance") OR
+
+  (m.title IN ["Toy Story", "Frozen", "Up", "Monsters, Inc.", "Inside Out"] AND g.name = "Animation") OR
+
+  (m.title IN ["The Shining", "Get Out", "The Conjuring"] AND g.name = "Horror") OR
+
+  (m.title IN ["Pulp Fiction", "Joker", "Whiplash", "Parasite"] AND g.name = "Drama") OR
+
+  (m.title IN ["Shrek", "Finding Nemo", "Soul"] AND g.name = "Comedy") OR
+
+  (m.title = "The Social Dilemma" AND g.name = "Documentary") OR
+
+  (m.title IN ["Spirited Away", "The Lion King"] AND g.name = "Fantasy")
+
+CREATE (m)-[:BELONGS_TO]->(g); 

@@ -1,0 +1,13 @@
+UNWIND range(1, 50) AS id
+
+CREATE (:User {
+
+    userId: id,
+
+    name: "User" + id,
+
+    age: 18 + toInteger(rand() * 40),
+
+    gender: CASE WHEN rand() > 0.5 THEN "M" ELSE "F" END
+
+}); 

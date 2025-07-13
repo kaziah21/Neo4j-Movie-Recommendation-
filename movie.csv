@@ -1,0 +1,65 @@
+UNWIND [
+
+  {id: 1, title: "The Matrix", year: 1999},
+
+  {id: 2, title: "Inception", year: 2010},
+
+  {id: 3, title: "Titanic", year: 1997},
+
+  {id: 4, title: "The Godfather", year: 1972},
+
+  {id: 5, title: "Shrek", year: 2001},
+
+  {id: 6, title: "The Dark Knight", year: 2008},
+
+  {id: 7, title: "Pulp Fiction", year: 1994},
+
+  {id: 8, title: "Finding Nemo", year: 2003},
+
+  {id: 9, title: "Get Out", year: 2017},
+
+  {id: 10, title: "The Notebook", year: 2004},
+
+  {id: 11, title: "Interstellar", year: 2014},
+
+  {id: 12, title: "Toy Story", year: 1995},
+
+  {id: 13, title: "Joker", year: 2019},
+
+  {id: 14, title: "Frozen", year: 2013},
+
+  {id: 15, title: "Parasite", year: 2019},
+
+  {id: 16, title: "Avengers: Endgame", year: 2019},
+
+  {id: 17, title: "The Lion King", year: 1994},
+
+  {id: 18, title: "Up", year: 2009},
+
+  {id: 19, title: "Black Panther", year: 2018},
+
+  {id: 20, title: "The Social Dilemma", year: 2020},
+
+  {id: 21, title: "Whiplash", year: 2014},
+
+  {id: 22, title: "Her", year: 2013},
+
+  {id: 23, title: "Monsters, Inc.", year: 2001},
+
+  {id: 24, title: "Spirited Away", year: 2001},
+
+  {id: 25, title: "The Shining", year: 1980},
+
+  {id: 26, title: "Deadpool", year: 2016},
+
+  {id: 27, title: "La La Land", year: 2016},
+
+  {id: 28, title: "Soul", year: 2020},
+
+  {id: 29, title: "Inside Out", year: 2015},
+
+  {id: 30, title: "The Conjuring", year: 2013}
+
+] AS movie
+
+CREATE (:Movie {movieId: movie.id, title: movie.title, year: movie.year});
