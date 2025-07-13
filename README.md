@@ -5,7 +5,7 @@ This project is a graph-based movie recommendation system using **Neo4j** and a 
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The graph database simulates a simplified movie recommendation engine by capturing interactions between:
 
@@ -21,7 +21,7 @@ The system allows you to:
 
 ---
 
-## 🧱 Graph Schema
+## Graph Schema
 
 ### **Node Types**
 | Label  | Properties |
@@ -38,7 +38,7 @@ The system allows you to:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 The dataset is sourced from the [MovieLens 100K dataset](https://grouplens.org/datasets/movielens/100k/), provided by GroupLens Research.  
 We used a **subset of**:
